@@ -1,17 +1,17 @@
 class Dog 
   
-  @@all = []
+  @@all = [] #class variable: store doggo
   
-  def initialize(name)
+  def initialize(name) #name each individual doggo
     @name = name
     save
   end
   
-  def save
+  def save #save the doggo to @@all
     @@all.push(self)
   end 
   
-  def name
+  def name #access the doggo's name
     @name
   end 
   
@@ -19,11 +19,11 @@ class Dog
     @@all
   end 
   
-  def self.print_all
+  def self.print_all #print all the doggos
     @@all.map {|doggo| puts doggo.name}
   end 
   
-  def self.clear_all
+  def self.clear_all #clear all the doggos 
     @@all.clear
   end 
     
