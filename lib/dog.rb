@@ -22,4 +22,9 @@ class Dog
   def self.print_all
     @@all.map {|doggo| puts doggo.name}
   end 
+  
+  def self.clear_all
+    @@all.clear
+  end 
+    
 end 
